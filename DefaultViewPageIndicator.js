@@ -13,8 +13,8 @@ var {
   Animated,
 } = ReactNative;
 var deviceWidth = Dimensions.get("window").width;
-var DOT_SIZE = 6;
-var DOT_SAPCE = 4;
+var DOT_SIZE = 8;
+var DOT_SPACE = 5;
 
 var styles = StyleSheet.create({
   tab: {
@@ -32,8 +32,8 @@ var styles = StyleSheet.create({
     height: DOT_SIZE,
     borderRadius: DOT_SIZE / 2,
     backgroundColor: "#E0E1E2",
-    marginLeft: DOT_SAPCE,
-    marginRight: DOT_SAPCE,
+    marginLeft: DOT_SPACE,
+    marginRight: DOT_SPACE,
   },
 
   curDot: {
@@ -41,9 +41,8 @@ var styles = StyleSheet.create({
     width: DOT_SIZE,
     height: DOT_SIZE,
     borderRadius: DOT_SIZE / 2,
-    backgroundColor: "#80ACD0",
-    margin: DOT_SAPCE,
-    bottom: 0,
+    backgroundColor: "#009a44",
+    margin: DOT_SPACE,
   },
 });
 
@@ -75,7 +74,7 @@ var DefaultViewPageIndicator = createReactClass({
 
   render() {
     var pageCount = this.props.pageCount;
-    var itemWidth = DOT_SIZE + DOT_SAPCE * 2;
+    var itemWidth = DOT_SIZE + DOT_SPACE * 2;
     var offset =
       (this.state.viewWidth - itemWidth * pageCount) / 2 +
       itemWidth * this.props.activePage;
