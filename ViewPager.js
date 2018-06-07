@@ -354,7 +354,7 @@ var styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     position: "absolute",
-    bottom: 10,
+    bottom: 25,
     left: 0,
     right: 0,
     backgroundColor: "transparent",
